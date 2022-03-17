@@ -39,6 +39,31 @@
                     <header>
                         <h2>Introduction</h2>
                     </header>
+                    <article>
+                        <p>
+                            Every one want to learn programming in usually he start with any programming language, Although we have a lot of  programming languages but they all have the same fundamentals.
+                        </p>
+                        <p>
+                            In this technical documentation, I well taken about the fundamentals that you will learn with any language you will choose.
+                        </p>
+                        <p>
+                            The fundamentals that we well taken about:
+                        </p>
+                        <ul>
+                            <li>Variables</li>
+                            <li>Print functions</li>
+                            <li>Comments</li>
+                            <li>Data Types</li>
+                            <li>If conditional concept</li>
+                            <li>Loop concept</li>
+                            <li>Functions</li>
+                            
+                        </ul>
+
+                        <p>
+                            In this document our example will be with JavaScript language.
+                        </p>
+                    </article>
 
                 </section>
 
@@ -47,6 +72,38 @@
                      <header>
                         <h2>Variables</h2>
                     </header>
+                    <article>
+                        <p>
+                            Any programming you will built in your career will have a data, and its will be hard to treat with a data with out any thing can mantain this data.
+                        </p>
+                        <p>
+                            So that we use variables, with a variables I can mantain my programs data and treat with users data also.
+                        </p>
+
+                        <p>
+                            Example:
+                        </p>
+
+                        <code>
+                            let x = 1;
+                            
+                            let y = 5;
+                            
+                            let z = y + x;
+                        </code>
+
+                        <p>In the last example you can the word <strong>let</strong> this word we used with <em>JavaScript language</em> to tell that we well make variable.</p>
+                        <p>All of <strong>(x, y, z) is our variable.</strong></p>
+                        
+                        <code>
+                            let x = 1; // variable x contain the value 1.
+                            
+                            let y = 5; // variable y contain the value 5. 
+                            
+                            let z = y + x; // variable z contain the result of x + z = 1 + 5 = 6.
+                        </code>
+                        
+                    </article>
                     
                 </section>
 
@@ -55,6 +112,36 @@
                      <header>
                         <h2>Print functions</h2>
                     </header>
+                    <article>
+                        <p>
+                            When a programmer work in his project, he all the time need to see the result of his code, to sure if he in the wright way or not.
+                        </p>
+                        <p>
+                            So in any programming language you will have a print function can print the result of your code, usually we didn't us it to print any thing to our users.
+                        </p>
+                        <p>
+                            <em>JavaScript</em> print functions:
+                        </p>
+                        <code>
+                            let x = "Ahmed Love FreeCodeCamp";
+                            
+                            console.log(x);
+                        </code>
+                        <p>
+                            In our code above you maybe know this part: <strong>let x = "..."</strong>,It's our variable, but this part <strong>(console.log(x))</strong> is out print function.
+                        </p>
+                        <p>
+                            My consoele will output thtis value:
+                        </p>
+                        <code>
+                            Ahmed Love FreeCodeCamp
+                        </code>
+                        <p>
+                            Of course the <strong>console.log()</strong> function is not the only printing function in <em>JavaScript</em>, and any language usually have multible of them.
+                        </p>
+
+
+                    </article>
                     
                 </section>
 
@@ -63,6 +150,34 @@
                      <header>
                         <h2>Comments</h2>
                     </header>
+
+                    <article>
+                        <p>
+                            In larg projects you will have many of program senteces and other programers working with you in the same project,Usually othe progtammers needed some thing to tell them what is your code do without reading your code to avoid wasting time.
+                        </p>
+                        <p>
+                            So that every language has a way to wright a comment.
+                        </p>
+                        <p>
+                            The common stile to write a comment in one line in several programming languages:
+                        </p>
+                        <code>
+                            // your comment
+                        </code>
+                        <p>
+                            The style above we used also in <em>JavaScript</em>, and this is common style to write a coomment:
+                        </p>
+                        <code>
+                            /*
+                                your comment
+                                your comment
+                                your comment
+                            */
+                        </code>
+                        <p>
+                            You dont use comment to explain your code for other programmers only, you use it for you alse to orgnaized your code.
+                        </p>
+                    </article>
                     
                 </section>
 
@@ -71,6 +186,26 @@
                      <header>
                         <h2>Data Types</h2>
                     </header>
+                    <article>
+                        <p>
+                            In variables lesson we mantain in variable x a number, and in Print functions lesson we mantain in it a text value.
+                        </p>
+                        <p>
+                            The values that we add to our programs variables have saveral types, and every type have a spetial way that the language treat with it.
+                        </p>
+                        <p>
+                            You can say the common types in the code below:
+                        </p>
+                        <code>
+                            let a = 13; //this data type is : integer(int)
+                            
+                            let b = "Egypt"; //this data type is : string(str)
+                            
+                            let c = true; //this data type is : boolean(bool)
+                            
+                            let d = [9, false, "JavaScript"] //this data type is : Array(arr)
+                        </code>
+                    </article>
                     
                 </section>
 
@@ -79,6 +214,52 @@
                     <header>
                        <h2>if conditional concept</h2>
                    </header>
+                   <article>
+                       <p>
+                           When you built your program you may need to costumaize your code for several cases, in this setuation we used the <strong>if statement</strong>
+                       </p>
+                       <p>
+                           Say that I have a move for adults only or childs with there patents, and I didn't want lonly childs to see the movie.
+                       </p>
+                       <p>
+                           To solve the proplem we well use <strong>if statement</strong> becouse we have many cases.
+                       </p>
+                       <code>
+                           
+                           let isAdult = true;
+                           
+                           let whithParents = false;
+                           
+                           if (isAdult == true) // this statement to sure if the watcher is adult or a child.
+                           
+                           {
+                                
+                                console.log("You can watch the movie"); // this what will excute if the watch is an adult.
+                                
+                           }
+                           
+                           else if (isAdult == false & whithParents = true) // this statement to sure if the child watcher with his parents or not. 
+                           
+                           {
+                                
+                                console.log("You can watch the movie"); // this what will excute if the watchet is a child and with his parents.
+                                
+                           }
+                           
+                           else // this statement will be true any way if both previouse statements doesn't exist.
+                           
+                           {
+                               
+                               consoele.log("You can't watch the movie") // this what will excute if the previouse statements doesn't exist. 
+                               
+                           }
+                       </code>
+
+                       <p>
+                           You can use <strong>if statement</strong> to treat with infinite cases.
+                       </p>
+                       
+                   </article>
                    
                </section>
 
