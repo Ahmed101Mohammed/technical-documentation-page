@@ -42,7 +42,10 @@ a:active
     color: cadetblue;
 }
 
-
+a:visited
+{
+    color: rgb(15, 10, 10);
+}
 
 code
 {
@@ -72,13 +75,14 @@ strong
     position: fixed;
     width: 24%;
     padding: 5px;
-    padding-top: 0px;
+    padding-top: 20px;
+    background-color: #eee;
 }
 
 #navbar
 {
     display: grid;
-    grid-template-rows: 8% 88%;
+    grid-template-rows: 10% 88%;
     height: 570px;
 }
 
@@ -106,6 +110,8 @@ main
 #main-doc
 {
     padding: 10px 0px 10px 10px;
+    
+    padding-bottom: 20px;
 }
 
 #main-doc section
@@ -142,8 +148,72 @@ article div
     color: white;
     padding-bottom: 20px;
 }
-
+article div::before
+{
+    text-align: center;
+    content: "JS";
+    width: 50px;
+    height: 20px;
+    display: inline-block;
+    color: black;
+    background-color: yellow;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    margin-bottom: 15px;
+    padding: 3px;
+    font-weight: bold;
+    font-family: monospace;
+}
 article span
 {
     color: chartreuse;
+}
+
+/* Media queries */
+
+@media (max-width: 992px) 
+{
+    .web
+    {
+        grid-template-rows: 5% 70%;
+        grid-template-columns: none;
+        padding:0px;
+        grid-column-gap:0px;
+        grid-row-gap: 20px;
+        
+    }
+
+    .head
+    {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0);
+        width: 98%;
+        padding-top: 20px;
+    }
+
+    #navbar 
+    {
+        display: grid;
+        grid-template-rows: 22% 66%;
+        height: 282px;
+    }
+
+    #navbar ul
+    {
+        height: 185px;
+        overflow: auto;
+    }
+
+    #navbar header
+    {
+        font-size: 3.3vw;
+    }
+
+    main
+    {
+        grid-row: 2/2;
+        padding-left: 15px;
+        height: 5292px;
+    }
 }
