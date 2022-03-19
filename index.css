@@ -62,7 +62,7 @@ strong
     width: calc(100% - 40px);
     height: auto;
     display: grid;
-    grid-template-columns: 26% 70%;
+    grid-template-columns: 18% 80%;
     padding: 20px;
     grid-gap: 20px;
 }
@@ -73,7 +73,7 @@ strong
 .head
 {
     position: fixed;
-    width: 24%;
+    width: 17%;
     padding: 5px;
     padding-top: 20px;
     background-color: #eee;
@@ -89,7 +89,8 @@ strong
 #navbar header
 {
     text-align: center;
-    font-size: 15px;
+    font-size: 0.7vw;
+    
 }
 
 #navbar ul
